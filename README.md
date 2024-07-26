@@ -1,6 +1,6 @@
 # php-gemini-client
 
-使用PHP封装了部分gemini rest api
+使用PHP封装了部分[gemini rest api](https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal)
 
 ## Table of Contents
 

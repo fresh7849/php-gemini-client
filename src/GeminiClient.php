@@ -14,9 +14,11 @@ use Baishu\GeminiClient\Response\StreamResponse;
 class GeminiClient
 {
     /**
-     * Undocumented function
+     * construct
      *
-     * @param  string|null  $credentialPath  JSON credential file path
+     * @param string $projectId
+     * @param string $location
+     * @param string|null $credentialPath  JSON credential file path
      */
     public function __construct(
         public readonly string $projectId,
