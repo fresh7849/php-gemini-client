@@ -1,12 +1,12 @@
 <?php
 
-namespace Yj\GeminiClient;
+namespace  Baishu\GeminiClient;
 
 use App\Repositories\Enum\GptModel;
 use Exception;
 use Google\Auth\Credentials\ServiceAccountCredentials;
 use GuzzleHttp\Client;
-use Yj\GeminiClient\Response\StreamResponse;
+use  Baishu\GeminiClient\Response\StreamResponse;
 
 /**
  * Gemini客服端.

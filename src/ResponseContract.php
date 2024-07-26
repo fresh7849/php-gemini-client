@@ -1,6 +1,6 @@
 <?php
 
-namespace Yj\GeminiClient\Contracts;
+namespace  Baishu\GeminiClient\Contracts;
 
 use ArrayAccess;
 

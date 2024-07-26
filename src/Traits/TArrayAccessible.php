@@ -1,6 +1,6 @@
 <?php
 
-namespace Yj\GeminiClient\Traits;
+namespace  Baishu\GeminiClient\Traits;
 
 /**
  * @template TArray of array

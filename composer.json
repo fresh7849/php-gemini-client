@@ -1,5 +1,5 @@
 {
-    "name": "yj/gemini-client",
+    "name": "baishu/gemini-client",
     "description": "a package is an encapsulation of the gemini rest api",
     "type": "library",
     "require": {
@@ -21,7 +21,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Yj\\GeminiClient\\": "src/"
+            " Baishu\\GeminiClient\\": "src/"
         }
     },
     "autoload-dev": {
