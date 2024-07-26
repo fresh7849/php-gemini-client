@@ -1,0 +1,60 @@
+{
+    "name": "yj/gemini-client",
+    "description": "a package is an encapsulation of the gemini rest api",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "google/auth": "^1.41",
+        "guzzlehttp/guzzle": "^7.2",
+        "colinodell/json5": "^3.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.17",
+        "mockery/mockery": "^1.6.12",
+        "pestphp/pest": "^2.34.7",
+        "pestphp/pest-plugin-arch": "^2.7",
+        "pestphp/pest-plugin-type-coverage": "^2.8.2",
+        "phpstan/phpstan": "^1.11.2",
+        "rector/rector": "^1.1.0",
+        "symfony/var-dumper": "^6.4.7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yj\\GeminiClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yjzhang",
+            "email": "fresh7849@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "pint -v",
+        "refactor": "rector --debug",
+        "test:lint": "pint --test -v",
+        "test:refactor": "rector --dry-run",
+        "test:types": "phpstan analyse --ansi",
+        "test:type-coverage": "pest --type-coverage --min=100",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:lint",
+            "@test:refactor",
+            "@test:types",
+            "@test:type-coverage",
+            "@test:unit"
+        ]
+    }
+}
