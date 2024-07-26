@@ -86,7 +86,7 @@ $payload = [
     ],
 ];
 $response = $client->streamGenerateContent($payload, $model);
-/** @var \ Baishu\GeminiClient\Response\Chat\ResponseChunk $responseItem */
+/** @var \Baishu\GeminiClient\Response\Chat\ResponseChunk $responseItem */
 foreach ($response as $responseItem) {
     echo json_encode($responseItem->toArray()).PHP_EOL.PHP_EOL;
 }

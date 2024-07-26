@@ -1,10 +1,10 @@
 <?php
 
-namespace  Baishu\GeminiClient\Response;
+namespace Baishu\GeminiClient\Response;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use  Baishu\GeminiClient\Response\Chat\ResponseChunk;
+use Baishu\GeminiClient\Response\Chat\ResponseChunk;
 
 /**
  * StreamResponse.

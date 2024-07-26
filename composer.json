@@ -21,7 +21,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            " Baishu\\GeminiClient\\": "src/"
+            "Baishu\\GeminiClient\\": "src/"
         }
     },
     "autoload-dev": {

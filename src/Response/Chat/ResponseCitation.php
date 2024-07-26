@@ -1,6 +1,6 @@
 <?php
 
-namespace  Baishu\GeminiClient\Response\Chat;
+namespace Baishu\GeminiClient\Response\Chat;
 
 final class ResponseCitation
 {
