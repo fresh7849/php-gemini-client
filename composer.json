@@ -1,5 +1,5 @@
 {
-    "name": "fresh/gemini",
+    "name": "freshphp/gemini",
     "description": "a package is an encapsulation of the gemini rest api",
     "type": "library",
     "require": {
