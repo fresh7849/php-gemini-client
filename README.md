@@ -16,7 +16,7 @@
 First, install Gemini via the [Composer](https://getcomposer.org/) package manager:
 
 ```bash
-composer require baishu/gemini-client
+composer require fresh/gemini
 ```
 
 Then, interact with Gemini's API:
@@ -86,7 +86,7 @@ $payload = [
     ],
 ];
 $response = $client->streamGenerateContent($payload, $model);
-/** @var \Baishu\GeminiClient\Response\Chat\ResponseChunk $responseItem */
+/** @var \Fresh\Gemini\Response\Chat\ResponseChunk $responseItem */
 foreach ($response as $responseItem) {
     echo json_encode($responseItem->toArray()).PHP_EOL.PHP_EOL;
 }

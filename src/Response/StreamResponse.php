@@ -1,14 +1,11 @@
 <?php
 
-namespace Baishu\GeminiClient\Response;
+namespace Fresh\Gemini\Response;
 
+use Fresh\Gemini\Response\Chat\ResponseChunk;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Baishu\GeminiClient\Response\Chat\ResponseChunk;
 
-/**
- * StreamResponse.
- */
 class StreamResponse implements \IteratorAggregate
 {
     public function __construct(
@@ -27,9 +24,6 @@ class StreamResponse implements \IteratorAggregate
         }
     }
 
-    /**
-     * Read a item from the stream.
-     */
     private function readItem(StreamInterface $stream): array
     {
         $buffer = '';

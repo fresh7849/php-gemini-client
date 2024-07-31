@@ -1,6 +1,6 @@
 <?php
 
-namespace Baishu\GeminiClient\Contracts;
+namespace Fresh\Gemini\Contracts;
 
 use ArrayAccess;
 
@@ -21,7 +21,7 @@ interface ResponseContract extends \ArrayAccess
     public function toArray(): array;
 
     /**
-     * @param  key-of<TArray>  $offset
+     * @param  mixed  $offset  key-of<TArray>
      */
     public function offsetExists(mixed $offset): bool;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Baishu\GeminiClient\Response\Chat;
+namespace Fresh\Gemini\Response\Chat;
 
 final class ResponseCitationMetadata
 {
