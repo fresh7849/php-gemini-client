@@ -1,9 +1,9 @@
 <?php
 
-namespace Baishu\GeminiClient\Response\Chat;
+namespace Fresh\Gemini\Response\Chat;
 
-use Baishu\GeminiClient\Contracts\ResponseContract;
-use Baishu\GeminiClient\Traits\TArrayAccessible;
+use Fresh\Gemini\Contracts\ResponseContract;
+use Fresh\Gemini\Traits\TArrayAccessible;
 
 /**
  * ResponseChunk.

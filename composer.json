@@ -1,5 +1,5 @@
 {
-    "name": "baishu/gemini-client",
+    "name": "fresh/gemini",
     "description": "a package is an encapsulation of the gemini rest api",
     "type": "library",
     "require": {
@@ -21,7 +21,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Baishu\\GeminiClient\\": "src/"
+            "Fresh\\Gemini\\": "src/"
         }
     },
     "autoload-dev": {
