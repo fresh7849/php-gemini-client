@@ -16,7 +16,7 @@
 First, install Gemini via the [Composer](https://getcomposer.org/) package manager:
 
 ```bash
-composer require fresh/gemini
+composer require freshphp/gemini
 ```
 
 Then, interact with Gemini's API:
@@ -25,7 +25,8 @@ Then, interact with Gemini's API:
 $path = '/gcs.json';
 $projectId = 'test';
 $location = 'us-central1';
-$client = new GeminiClient($projectId,$location,$path);
+$model = 'gemini-1.5-pro-001';
+$client = Client::instance('yotta-ai', 'us-central1', $path, $model);
 ```
 
 ## Usage
@@ -35,9 +36,9 @@ $client = new GeminiClient($projectId,$location,$path);
 ```php
 $data = [['text' => 'test']];
 $model = 'gemini-1.5-flash-001';
-$res = $client->countTokens($data,$model);
+$res = $client->withModelId($model)->countTokens($data);
 
-echo json_encode($res);
+echo json_encode($res->toArray());
 // result: {"totalTokens":1,"totalBillableCharacters":4}
 ```
 
@@ -85,7 +86,7 @@ $payload = [
         ],
     ],
 ];
-$response = $client->streamGenerateContent($payload, $model);
+$response = $client->streamGenerateContent($payload);
 /** @var \Fresh\Gemini\Response\Chat\ResponseChunk $responseItem */
 foreach ($response as $responseItem) {
     echo json_encode($responseItem->toArray()).PHP_EOL.PHP_EOL;
